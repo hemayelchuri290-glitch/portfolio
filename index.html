@@ -3,16 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Explore my background, skills, and projects in my personal portfolio.">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>    
-       <h1>WELCOME TO MY PROTOFOLIO</h1>
-       <button class="button"><a href="./mypage.html">ABOUT</a></button>
-       <button class="button"><a href="./skills.html">SKILLS</a></button>
-       <button class="button"><a href="./project.html">PROJECTS</a></button>
-       <button class="button"><a href="./contact.html">CONTACTS</a></button>
+    <header class="site-header">
+        <a class="wordmark" href="./index.html" aria-label="Portfolio home">PORTFOLIO<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="./mypage.html">About</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./project.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
     </header>
+
+    <main>
+        <section class="hero" aria-labelledby="welcome-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> PERSONAL PORTFOLIO</p>
+                <h1 id="welcome-title">A little about <em>me.</em></h1>
+                <p class="intro">Explore my background, the skills I’m building, and the projects I’m working on.</p>
+                <a class="primary-link" href="./project.html">Explore my projects <span aria-hidden="true">↗</span></a>
+                <p class="scroll-note"><span aria-hidden="true">↓</span> Take a look around</p>
+            </div>
+            <figure class="hero-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" alt="Laptop and tools on a web developer's desk">
+                <figcaption>Curiosity, ideas, and a little code.</figcaption>
+            </figure>
+        </section>
+        <footer class="home-footer">
+            <span>ABOUT · SKILLS · PROJECTS · CONTACT</span>
+            <a href="./contact.html">Let’s connect <span aria-hidden="true">↗</span></a>
+        </footer>
+    </main>
 </body>
 </html>
